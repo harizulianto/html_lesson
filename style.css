@@ -14,6 +14,7 @@ p,
 div {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,14 +29,19 @@ a {
   text-decoration: none;
 }
 
+.clear {
+  clear: left;
+}
+
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .bagian-utama {
-  padding: 180px 0 100px 0;
+  padding: 180px 0 80px 0;
   color: white;
   text-align: center;
   background-image: url(img/portfolio/2.png);
@@ -62,12 +68,13 @@ a {
   border-radius: 4px;
 }
 
-.btn:hover {
-  opacity: 1;
+.btn-utama {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.btn-utama {
-  margin: 20px 0;
+.btn:hover {
+  opacity: 1;
 }
 
 .btn-utama p {
@@ -94,9 +101,11 @@ a {
 }
 
 .bagian-tambahan {
-  height: 200px;
+  /* height: 500px;*/
   padding-bottom: 80px;
-  /* background-color: #e6e6fa;*/
+  padding-left: 5%;
+  padding-right: 5%;
+  /*background-color: #e6e6fa;*/
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -122,7 +131,7 @@ a {
 
 .lesson-icon p {
   position: absolute;
-  top: 100px;
+  top: 110px;
   width: 100%;
   color: #5f5d60;
 }
@@ -130,11 +139,11 @@ a {
 .txt-contents {
   width: 80%;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 15px;
   color: #5f5d60;
 }
-
+/*
 .footing {
   padding: 30px 80px;
   color: #5f5d60;
@@ -144,6 +153,29 @@ a {
   margin: 10px 30px;
   font-weight: normal;
   text-align: center;
+}
+*/
+.heading h3 {
+  font-weight: normal;
+}
+
+/*
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+*/
+.klik {
+  cursor: pointer;
+}
+
+.klik:active {
+  /*padding: 15px 40px;*/
+  background-color: #5dca88;
+  box-shadow: 0 7px #1a7940;
+  position: relative;
+  top: 7px;
 }
 
 footer img {
@@ -157,5 +189,6 @@ footer p {
 
 footer {
   padding-top: 30px;
-  background-color: #242225c2;
+  /* background-color: #242225c2;*/
+  padding-bottom: 20px;
 }
