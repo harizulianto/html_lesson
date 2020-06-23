@@ -1,0 +1,52 @@
+.diva {
+  width: 50px;
+  height: 10px;
+  background-color: red;
+  position: relative;
+  /*animation: example 5s linear 2s infinite alternate;*/
+  animation: example 8s linear 2s infinite alternate;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    right: 293px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    right: 585px;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    right: 878px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    right: 1170px;
+    top: 0px;
+  }
+
+  100% {
+    background-color: red;
+    left: 1170px;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    left: 878px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 585px;
+    top: 0px;
+  }
+}
